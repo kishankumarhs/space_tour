@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Space tourism website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="crew_body">
+  <header class="home_header">
+
+    <div class="logo">
+      <img src="assets/home/Path.svg" alt="">
+    </div>
+
+    <div class="thinline"></div>
+    <ul class="navbar">
+      <li>
+        <a href="index.html">
+          <p>00</p>
+          <p>Home</p>
+        </a>
+      </li>
+      <li>
+        <a href="destination-moon.html">
+          <p>01</p>
+          <p>Destination</p>
+        </a>
+      </li>
+      <li>
+        <a href="crew-commander.html">
+          <p>02</p>
+          <p>Crew</p>
+        </a>
+      </li>
+      <li>
+        <a href="technology-vehicle.html">
+          <p>03</p>
+          <p>Technology</p>
+        </a>
+      </li>
+    </ul>
+    <div class="mobile_menu " id="menu_open">
+      <img src="assets/home/Group.svg" alt="Mobile Menu" srcset="">
+    </div>
+    <div class="mobile_menu close" id="menu_close">
+      <img src="assets/crew/Group.svg" alt="">
+    </div>
+  </header>
+  <p class="main_heading"> <span>02</span> Meet your crew</p>
+
+  <div class="crew_main">
+
+    <div class="crew_info">
+      <p class="crew_rol" id="crew_role">Commander</p>
+      <p class="crew_name" id="crew_name">Douglas Hurley</p>
+      <p class="crew_details" id="crew_description">
+        Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+        and former NASA astronaut. He launched into space for the third time as
+        commander of Crew Dragon Demo-2.
+      </p>
+    </div>
+    <div class="dots">
+      <span class="dot active_dot" data-crew="0"></span>
+      <span href="#" data-crew="1" class="dot"></span>
+      <span href="#" data-crew="2" class="dot"></span>
+      <span href="#" data-crew="3" class="dot"></span>
+    </div>
+  </div>
+  <img class="crew_img" id="crew_img" src="assets/crew/image-douglas-hurley.webp" alt="" srcset="">
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title> Space tourism website</title>
+</head>
+
+<body class="destination_body">
+  <header class="home_header">
+
+    <div class="logo">
+      <img src="assets/home/Path.svg" alt="">
+    </div>
+
+    <div class="thinline"></div>
+    <ul class="navbar">
+      <li>
+        <a href="index.html">
+          <p>00</p>
+          <p>Home</p>
+        </a>
+      </li>
+      <li>
+        <a href="destination-moon.html">
+          <p>01</p>
+          <p>Destination</p>
+        </a>
+      </li>
+      <li>
+        <a href="crew-commander.html">
+          <p>02</p>
+          <p>Crew</p>
+        </a>
+      </li>
+      <li>
+        <a href="technology-vehicle.html">
+          <p>03</p>
+          <p>Technology</p>
+        </a>
+      </li>
+    </ul>
+    <div class="mobile_menu " id="menu_open">
+      <img src="assets/home/Group.svg" alt="Mobile Menu" srcset="">
+    </div>
+    <div class="mobile_menu close" id="menu_close">
+      <img src="assets/crew/Group.svg" alt="">
+    </div>
+  </header>
+
+  <p class="main_heading"> <span>01</span> Pick your destination</p>
+  <section class="destination">
+    <div class="image_holder">
+      <img id="dest_img" src="assets/destination/image-moon.png" alt="" srcset="">
+    </div>
+    <div class="info">
+      <ul class="subnav">
+        <li class="items"> <a href="#" data-planet="0" class="active">Moon</a> </li>
+        <li class="items"><a href="#" data-planet="1">Mars</a></li>
+        <li class="items"><a href="#" data-planet="2">Europa</a></li>
+        <li class="items"><a href="#" data-planet="3">Titan</a></li>
+      </ul>
+      <div class="destination_details">
+        <h1 class="destination_heading" id="dest_head">
+          Moon
+        </h1>
+        <p class="destination_para" id="dest_para">
+          See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+          regain perspective and come back refreshed. While you’re there, take in some history
+          by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+      </div>
+      <div class="three">
+        <div class="dist">
+          <small>Avg. distance</small>
+          <p class="km" id="dest_distance">384,400 km</p>
+        </div>
+        <div class="travel_time">
+          <small> Est. travel time</small>
+          <p class="km" id="travel_time">3 days</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
