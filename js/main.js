@@ -132,7 +132,7 @@ window.onload = () => {
 
     }
 
-    fetch("./data.json")
+    fetch("data.json")
         .then((Response) => {
             return Response.json();
         }).then(jsonData => {
