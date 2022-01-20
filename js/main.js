@@ -131,20 +131,14 @@ window.onload = () => {
         }
 
     }
-
-    fetch("data.json")
-        .then((Response) => {
-            return Response.json();
-        }).then(jsonData => {
-            var data = jsonData;
-            var destination = data.destinations
-            var crew = data.crew
-            var technology = data.technology
-            LoadDestination(destination)
-            LoadCrew(crew)
-            LoadTech(technology)
-        })
-
+    var json = require("data.json");
+    var data = json;
+    var destination = data.destinations
+    var crew = data.crew
+    var technology = data.technology
+    LoadDestination(destination)
+    LoadCrew(crew)
+    LoadTech(technology)
     var menu = document.querySelector('.navbar');
     var menu_open = document.getElementById("menu_open");
     var menu_close = document.getElementById("menu_close");
