@@ -131,7 +131,12 @@ window.onload = () => {
         }
 
     }
-    var json = require("data.json");
+    var json ;
+    try{
+       json = require("data.json");
+    } catch (e) {
+        console.log(e)
+    }
     var data = json;
     var destination = data.destinations
     var crew = data.crew
